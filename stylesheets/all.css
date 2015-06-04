@@ -346,3 +346,76 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+/* line 13, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+a {
+  color: #2b5fc0;
+  text-decoration: none; }
+  /* line 16, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+  a:hover {
+    color: #2e4c7a; }
+
+/* line 21, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+blockquote {
+  font-weight: 300; }
+
+/* line 25, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 29, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #052a5d; }
+
+/* line 34, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+h1, h2, h3, h4, h5 {
+  color: #2e4c7a; }
+
+/* line 38, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+img {
+  max-width: 100%; }
+
+/* line 5, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+.section-wrap {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 16px;
+  width: 760px; }
+  /* line 10, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+  .section-wrap.short {
+    padding: 0 16px; }
+  /* line 13, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+  .section-wrap.tall {
+    padding: 64px 16px; }
+
+/* line 18, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+.nav-link {
+  margin-right: 16px;
+  font-weight: 300; }
+
+/* line 23, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+.footer {
+  background-color: #052a5d;
+  margin-top: 16px; }
+  /* line 26, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+  .footer .nav-link {
+    color: #9bb6e9; }
+    /* line 28, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+    .footer .nav-link:hover {
+      color: white; }
+
+/* line 34, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+.footer-back {
+  background-color: #052a5d;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1; }
+
+/* line 42, /Users/swecker/Projects/endigit/source/stylesheets/all.scss */
+.img-wrap {
+  float: left;
+  margin: 0 24px 16px 0; }

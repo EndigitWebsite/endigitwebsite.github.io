@@ -1,0 +1,30 @@
+/* line 13, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+a {
+  color: #2b5fc0;
+  text-decoration: none; }
+  /* line 16, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+  a:hover {
+    color: #2e4c7a; }
+
+/* line 21, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+blockquote {
+  font-weight: 300; }
+
+/* line 25, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 29, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #052a5d; }
+
+/* line 34, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+h1, h2, h3, h4, h5 {
+  color: #2e4c7a; }
+
+/* line 38, /Users/swecker/Projects/endigit/source/stylesheets/base.scss */
+img {
+  max-width: 100%; }

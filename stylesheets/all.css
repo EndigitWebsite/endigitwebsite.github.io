@@ -378,6 +378,10 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
+/* line 42, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+td {
+  padding: 5px; }
+
 /* line 5, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .section-wrap {
   margin: 0 auto;

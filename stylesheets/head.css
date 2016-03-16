@@ -1,0 +1,23 @@
+/* line 3, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.head {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.head-logo {
+  padding-right: 20px;
+  width: 200px; }
+
+/* line 12, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.nav-link {
+  color: #fff;
+  margin-right: 16px; }
+  /* line 15, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+  .nav-link:hover {
+    color: #9bb6e9; }
+
+/* line 20, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.ni-alliance-badge {
+  padding: 10px;
+  width: 150px; }

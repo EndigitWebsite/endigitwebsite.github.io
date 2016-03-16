@@ -347,94 +347,116 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 13, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 3, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 a {
   color: #2b5fc0;
   text-decoration: none; }
-  /* line 16, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+  /* line 6, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
   a:hover {
     color: #2e4c7a; }
 
-/* line 21, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 11, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+body {
+  background-color: #052a5d; }
+
+/* line 15, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 blockquote {
   font-weight: 300; }
 
-/* line 25, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 19, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 29, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 23, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 html {
   font-family: 'Open Sans', sans-serif;
   color: #052a5d; }
 
-/* line 34, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 28, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 h1, h2, h3, h4, h5 {
   color: #2e4c7a; }
 
-/* line 38, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 32, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 img {
   max-width: 100%; }
 
-/* line 42, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 36, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
 td {
   padding: 5px; }
 
-/* line 5, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+/* line 3, /home/ubuntu/workspace/endigit.com/source/stylesheets/foot.scss */
+.copyright-wrap {
+  color: #8f938e;
+  font-size: 12px;
+  text-align: center; }
+
+/* line 9, /home/ubuntu/workspace/endigit.com/source/stylesheets/foot.scss */
+.foot {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: left;
+  margin-top: 16px; }
+
+/* line 3, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.head {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.head-logo {
+  padding-right: 20px;
+  width: 200px; }
+
+/* line 12, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.nav-link {
+  color: #fff;
+  margin-right: 16px; }
+  /* line 15, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+  .nav-link:hover {
+    color: #9bb6e9; }
+
+/* line 20, /home/ubuntu/workspace/endigit.com/source/stylesheets/head.scss */
+.ni-alliance-badge {
+  padding: 10px;
+  width: 150px; }
+
+/* line 7, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .section-wrap {
   margin: 0 auto;
   max-width: 100%;
+  overflow: hidden;
   padding: 16px;
   width: 760px; }
-  /* line 10, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+  /* line 13, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
   .section-wrap.short {
     padding: 0 16px; }
-  /* line 13, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+  /* line 16, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
   .section-wrap.tall {
     padding: 64px 16px; }
 
-/* line 18, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
-.nav-link {
-  margin-right: 16px;
-  font-weight: 300; }
-
-/* line 23, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
-.footer {
-  background-color: #052a5d;
-  clear: left;
-  margin-top: 16px; }
-  /* line 27, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
-  .footer .nav-link {
-    color: #9bb6e9; }
-    /* line 29, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
-    .footer .nav-link:hover {
-      color: white; }
-
-/* line 35, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
-.footer-back {
-  background-color: #052a5d;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: -1; }
-
-/* line 43, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+/* line 21, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .certification-image {
   max-height: 200px;
   max-width: 200px; }
 
-/* line 48, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+/* line 26, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+.page-content-wrap {
+  background-color: #fff; }
+
+/* line 30, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .product-image {
   max-height: 400px;
   max-width: 400px; }
 
-/* line 53, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+/* line 35, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .image-wrap {
   float: left;
   margin: 0 24px 16px 0; }
 
-/* line 58, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
+/* line 40, /home/ubuntu/workspace/endigit.com/source/stylesheets/all.scss */
 .small {
   font-size: 14px; }

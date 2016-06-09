@@ -1,38 +1,38 @@
-/* line 3, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 3, /home/ubuntu/workspace/source/stylesheets/base.scss */
 a {
   color: #2b5fc0;
   text-decoration: none; }
-  /* line 6, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+  /* line 6, /home/ubuntu/workspace/source/stylesheets/base.scss */
   a:hover {
     color: #2e4c7a; }
 
-/* line 11, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 11, /home/ubuntu/workspace/source/stylesheets/base.scss */
 body {
   background-color: #052a5d; }
 
-/* line 15, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 15, /home/ubuntu/workspace/source/stylesheets/base.scss */
 blockquote {
   font-weight: 300; }
 
-/* line 19, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 19, /home/ubuntu/workspace/source/stylesheets/base.scss */
 div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 23, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 23, /home/ubuntu/workspace/source/stylesheets/base.scss */
 html {
   font-family: 'Open Sans', sans-serif;
   color: #052a5d; }
 
-/* line 28, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 28, /home/ubuntu/workspace/source/stylesheets/base.scss */
 h1, h2, h3, h4, h5 {
   color: #2e4c7a; }
 
-/* line 32, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 32, /home/ubuntu/workspace/source/stylesheets/base.scss */
 img {
   max-width: 100%; }
 
-/* line 36, /home/ubuntu/workspace/endigit.com/source/stylesheets/base.scss */
+/* line 36, /home/ubuntu/workspace/source/stylesheets/base.scss */
 td {
   padding: 5px; }

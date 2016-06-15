@@ -21,18 +21,18 @@ function listUpcomingEvents(){
 
     request.execute(function(resp) {
         var events = resp.items;
-        var header = document.getElementById("events")
-        console.log(header);
-        var h3 = document.createElement("H3");
-        var text = document.createTextNode("Upcoming Events2:")
-        h3.appendChild(text);
-        
+
         if (events.length > 0) {
+            var eventsDiv = document.getElementById("events");
+            var eventsTitleDiv = document.createElement("div");
+            eventsTitleDiv.className = "eventsTitle";
+            var eventsTitle = document.createTextNode("Upcoming Events");
+            eventsTitleDiv.appendChild(eventsTitle);
+            eventsDiv.appendChild(eventsTitleDiv);
             for (i = 0; i < events.length; i++) {
               var event = events[i];
 
               //Add Event to the Event List
-              var eventsDiv = document.getElementById("events");
               var newEvent = document.createElement("div");
               newEvent.className = "event";
               eventsDiv.appendChild(newEvent);

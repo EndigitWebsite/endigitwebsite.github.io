@@ -10,7 +10,7 @@
       float: right; } }
 
 /* line 14, /home/ubuntu/workspace/source/stylesheets/events.scss */
-#eventsTitle {
+.eventsTitle {
   background-color: #052a5d;
   padding: 10px;
   color: white;

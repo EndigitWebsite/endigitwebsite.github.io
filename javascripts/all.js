@@ -53,12 +53,30 @@ function listUpcomingEvents(){
               }
               
               //Format Event Date/Time
-              var w = event.start.dateTime;
-			  var start = moment(w).format("MMMM DD  h:mm");
-			  var end = moment(event.end.dateTime).format("h:mm A");
-			  var when = start + ' - ' + end;
-			  if (!when) {
-                when = event.start.date;
+              if (event.start.date){
+                  var start = moment(event.start.date).format("MMMM DD");
+                  var startDay = moment(event.start.date).dayOfYear();
+                  var startMonth = moment(event.start.date).month();
+                  var end = moment(event.end.date).subtract(1, 'days').format("MMMM DD");
+                  var endDay = moment(event.end.date).subtract(1, 'days').dayOfYear();
+                  var endMonth = moment(event.end.date).subtract(1, 'days').month();
+                  if (startDay == endDay){
+                      //All Day, 1 Day Event
+                      var when = start;
+                  } else {
+                      //Multiple Day Event
+                      if (startMonth == endMonth){
+                        //Same Month
+                        var when = start + ' - ' + moment(end).format("DD");
+                      } else {
+                        //Multiple Months
+                        var when = start + ' - ' + end;
+                      }
+                  }
+              } else {
+                  var start = moment(event.start.dateTime).format("MMMM DD  h:mm");
+    			  var end = moment(event.end.dateTime).format("h:mm A");
+    			  var when = start + ' - ' + end;
               }
 			  //Add Date/Time to the Event
 			  var newEventDate = document.createElement("div");

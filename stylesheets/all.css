@@ -448,6 +448,22 @@ img {
 td {
   padding: 5px; }
 
+/* line 41, /home/ubuntu/workspace/source/stylesheets/base.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+/* line 47, /home/ubuntu/workspace/source/stylesheets/base.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /* line 3, /home/ubuntu/workspace/source/stylesheets/foot.scss */
 .copyright-wrap {
   color: #8f938e;

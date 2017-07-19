@@ -1,87 +1,376 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Endigit</title>
-    <meta content='Endigit' name='title'>
-    <meta content='Endigit' name='name'>
-    <meta content='Endigit' property='og:title'>
-    <meta content='Represent Endigit to customers and potential customers' name='description'>
-    <meta content='Represent Endigit to customers and potential customers' itemprop='description'>
-    <meta content='Represent Endigit to customers and potential customers' id='meta-tag-description' property='og:description'>
-    <script src="/javascripts/all.js" type="text/javascript"></script>
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
-    <script src='https://apis.google.com/js/client.js?onload=initCalendar'></script>
-  </head>
-  <body>
-    <div class='head section-wrap'>
-      <div class='head-logo-wrap'>
-        <img class='head-logo' src='/images/logo.png'>
-        <img class='ni-alliance-badge' src='/images/national-instruments/silver-alliance-partner.png'>
-      </div>
-      <a class='nav-link' href='/'>Home</a>
-      <!-- /%a.nav-link{:href => '/why-labview'} Why LabVIEW? -->
-      <a class='nav-link' href='/SquareBattle'>SquareBattle</a>
-      <a class='nav-link' href='/expertise'>Expertise</a>
-      <a class='nav-link' href='/products'>Products</a>
-      <!-- /%a.nav-link{:href => '/bacnet'} BACnet -->
-      <a class='nav-link' href='/support'>Support</a>
-      <a class='nav-link' href='/contact'>Contact</a>
-      <a class='nav-link' href='http://blog.endigit.com'>Blog</a>
-    </div>
-    <div class='page-content-wrap'>
-      <div class='section-wrap'>
-        <!-- / Start of HubSpot Embed Code -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2898752.js"></script>
-        <!-- /End of HubSpot Embed Code -->
-        <div class='content'>
-          <h2>About Us</h2>
-          <p>
-            Endigit is a premier <a rel='nofollow' target='_blank' href='http://ni.com/labview'>LabVIEW</a> development company, specializing in all areas of
-            LabVIEW development, including <a rel='nofollow' target='_blank' href='http://www.ni.com/labview/realtime/'>LabVIEW RT</a> and
-            <a rel='nofollow' target='_blank' href='http://www.ni.com/labview/fpga/'>LabVIEW FPGA</a>.  As a
-            <a rel='nofollow' target='_blank' href='http://www.ni.com/'>National Instruments</a>
-            <a rel='nofollow' target='_blank' href='http://www.ni.com/alliance/'>Certified Silver Alliance Partner</a> we work closely with NI to provide you with
-            the best integration solution.  As
-            <a rel='nofollow' target='_blank' href='http://www.ni.com/services/certified_labview_architects.htm?location=UT'>Certified LabVIEW Architects</a>,
-            our engineers have attained the highest level of proficiency National Instruments has to offer, ensuring that your
-            system is built with clean and efficient code.  Based in the Greater Salt Lake City Area, Endigit serves Utah and the
-            Mountain West as well as national customers. The name Endigit is a compilation of the concepts of engineering and the
-            digital world.
-          </p>
-          <p>
-            Endigit's goal is to help our customers be successful.  If you are considering using a consultant for your system
-            integration, you may want to view this
-            <a rel='nofollow' target='_blank' href='http://www.controlsys.org/images/documents/CSIANewsReleases/10%20reasons%20why%20system%20integration%20is%20important.pdf'>three page paper</a>
-            by the <a rel='nofollow' target='_blank' href='http://www.controlsys.org'>Control System Integrators Association (CSIA)</a>.
-          </p>
-          <h2>
-            <a rel='nofollow' target='_blank' href='http://partners.ni.com/partner_locator/partner_details.aspx?id=86525&amp;tab=testimonials#testimonials'>Customer Reviews on NI Alliance Page</a>
-          </h2>
-          <p>
-            Quote from <a rel='nofollow' target='_blank' href='http://www.forbes.com/sites/alexknapp/2011/10/12/national-instruments-is-leading-a-quiet-technological-revolution/'>Forbes Article</a>
-            <blockquote>
-              <p>
-                "What LabVIEW has meant for testing is increased productivity – the ability to do more in less time with fewer
-                people, while still achieving the same results.
-              </p>
-              <p>
-                In building the James Webb Space Telescope, for example. NASA anticipated that they would need about 600
-                programmers and several years to design and test due to the 50,000+ actuated mirrors on the telescope. Using
-                LabVIEW, however, they were able to complete the project with only 2 programmers over the course of a few months.
-                That’s an impressive achievement."
-              </p>
-            </blockquote>
-          </p>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="As NI Silver Alliance Partners our Certified LabVIEW Architects provide premier software development for your data acquisition and automated test needs.">
+    <title>Endigit - Premier LabVIEW Development</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-27410232-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<!-- /Google Analytics -->
+</head>
+
+<body style="background-color:rgb(37,40,103);">
+
+
+<!-- Headers -->
+    <div class="visible-xs-block hidden-sm hidden-md hidden-lg" style="background-repeat:no-repeat;background-size:cover;background-image:url(&quot;assets/img/Small Rocket with Graph.jpg&quot;);padding-top:16px;"><!-- mobile size -->
+        <div class="header-blue" style="background-image:url(&quot;assets/img/First_Page_Rocket_mod_small.jpg&quot;);background-size:cover;background-repeat:no-repeat;background-position:0px 0px;">
+            <nav class="navbar navbar-default navbar-fixed-top navigation-clean-search" style="color:rgba(33,52,119,0.77);background-color:rgba(43,35,91,0.76);padding-bottom:0px;margin-bottom:21px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-link" href="index.html" style="padding-right:0px;"><img class="img-rounded img-responsive" src="assets/img/Endigit_Logo.png" alt="Endigit Logo" width="150" style="background-size:contain;width:150px;margin-top:-14px;"></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="icon-bar" style="color:rgba(246,247,249,0.772549);"></span><span class="icon-bar" style="color:rgba(245,245,248,0.772549);"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="services/labview.html">LabVIEW Development</a></li>
+                                    <li role="presentation"><a href="services/dataacquisition.html">Data Acquisition</a></li>
+                                    <li role="presentation"><a href="services/automtaedtest.html">Automated Test</a></li>
+                                    <li role="presentation"><a href="services/embedded.com">Embedded Control and Monitoring</a></li>
+                                    <li role="presentation"><a href="services/vision.html">Vision Systems</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="ipblaster.html">IPBlaster </a></li>
+                                    <li role="presentation"><a href="bacnet.html">BACnet API</a></li>
+                                    <li role="presentation"><a href="squarebattle.html">SquareBattle </a></li>
+                                </ul>
+                            </li>
+							<!-- Removing Technical Data from menu until it is implemented --><!--
+                            <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Technical Data<span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="techdata/whitepapers.html">White Papers</a></li>
+                                    <li role="presentation"><a href="techdata/casestudies.html">Case Studies</a></li>
+                                    <li role="presentation"><a href="source/techdata/about.html">About Engidit</a></li>
+                                </ul>
+                            </li> -->
+                            <li role="presentation"><a href="http://blog.endigit.com/" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;" target="_blank">Blog </a></li>
+							<li role="presentation"><a href="techdata/about.html" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;">About Endigit</a></li>
+							<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--
+                            <li role="presentation" style="font-size:16px;font-family:Amiko, sans-serif;"><a href="contact" style="color:#fcfeff;">Contact </a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+			 <div class="container hero" style="background-size:cover;background-repeat:no-repeat;">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0" style="background-image:url(&quot;assets/img/First_Page_Rocket_mod_small_overlay.png&quot;);">
+                        <h1 style="font-size:24px;margin-top:19px;"><strong>PREMIER LabVIEW DEVELOPMENT</strong></h1>
+                       <!--  <p style="font-size:16px;font-family:'Source Sans Pro', sans-serif;font-style:normal;font-weight:normal;">Innovative Data Acquisition &amp; Precision Control </p>
+						-->
+                    </div>
+                </div>
+            </div>
+	    </div>
+    </div><!-- /mobile size -->
+    <div class="hidden-xs" style="background-image:url(&quot;assets/img/RocketWithGraph.png&quot;);background-repeat:repeat-x;background-size:cover;background-position:top;"><!-- Visible for Small/medium/and large -->
+        <div class="header-blue" style="background-size:cover;background-repeat:no-repeat;background-position:0px 0px;height:880px;background-color:rgba(24,78,142,0);width:0px;">
+            <nav class="navbar navbar-default navbar-fixed-top navigation-clean-search" style="color:rgba(33,52,119,0);background-color:rgba(43,35,91,0);padding-bottom:0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-link" href="index.html" style="padding-right:0px;"><img class="img-rounded img-responsive" src="assets/img/Endigit_Logo.png" alt="Endigit Logo" width="150" style="background-size:contain;width:150px;margin-top:-14px;"></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="services/labview.html">LabVIEW Development</a></li>
+                                    <li role="presentation"><a href="services/dataacquisition.html">Data Acquisition</a></li>
+                                    <li role="presentation"><a href="services/automatedtest.html">Automated Test</a></li>
+                                    <li role="presentation"><a href="services/embedded.html">Embedded Control and Monitoring</a></li>
+                                    <li role="presentation"><a href="services/vision.html">Vision Systems</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="products/ipblaster.html">IPBlaster </a></li>
+                                    <li role="presentation"><a href="products/bacnet.html">BACnet API</a></li>
+                                    <li role="presentation"><a href="products/squarebattle.html">SquareBattle </a></li>
+                                </ul>
+                            </li>
+							<!-- Removing Technical Data from menu until it is implemented --><!--
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Technical Data<span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="techdata/whitepapers.html">White Papers</a></li>
+                                    <li role="presentation"><a href="techdata/casestudies.html">Case Studies</a></li>
+                                    <li role="presentation"><a href="techdata/about.html">About Endigit</a></li>
+                                </ul>
+                            </li> -->
+                            <li role="presentation"><a href="http://blog.endigit.com/" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;" target="_blank">Blog </a></li>
+							<li role="presentation"><a href="techdata/about.html" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;">About Endigit</a></li>
+							<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--
+                            <li role="presentation" style="font-size:16px;font-family:Amiko, sans-serif;"><a href="contact.html" style="color:#fcfeff;">Contact </a></li> -->
+                        </ul>
+                        <form class="navbar-form navbar-left" target="_self">
+                            <div class="form-group"></div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero" style="background-size:cover;background-repeat:no-repeat;margin-top:0px;">
+                <div class="row" style="height:150px;">
+                    <div class="col-md-12"><span> </span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3"><span> </span></div>
+                    <div id="head1" class="col-lg-6 col-lg-pull-2 col-md-6 col-md-pull-2 col-sm-7 col-sm-offset-1" style="color:rgba(51,51,51,0.02);">
+						<h2 style="font-size:46px;margin-top:19px;color:rgb(113,237,242);padding-left:25px;">
+						<strong>PREMIER LabVIEW DEVELOPMENT</strong></h2>
+						<!-- <p style="font-size:30px;font-family:&#39;Source Sans Pro&#39;, sans-serif;font-style:normal;font-weight:normal;color:#ffffff;padding-left:25px;">Innovative Data Acquisition &amp; Precision Control </p> -->
+					</div>
+                    <div class="col-lg-1 col-md-3"><span> </span></div>
+                </div>
+            </div>
         </div>
-        <div id='events'></div>
-      </div>
-    </div>
-    <div class='foot section-wrap tall'>
-      <div class='copyright-wrap'>
-        &copy; 2017 Endigit
-      </div>
-    </div>
-  </body>
+	</div><!-- /Visible for Small/medium/and large -->
+	 
+	<div class="hidden-xs hidden-sm hidden-md hidden-lg" style="background-image:url(&quot;assets/img/RocketWithGraph.png&quot;);background-repeat:repeat-x;background-size:cover;background-position:top;"><!-- Seems to be hidden for every size -->
+        <div class="header-blue" style="background-size:cover;background-repeat:no-repeat;background-position:0px 0px;height:880px;background-color:rgba(24,78,142,0);width:0px;">
+            <nav class="navbar navbar-default navbar-fixed-top navigation-clean-search" style="color:rgba(33,52,119,0);background-color:rgba(43,35,91,0);padding-bottom:0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-link" href="index.html" style="padding-right:0px;"><img class="img-rounded img-responsive" src="assets/img/Endigit_Logo.png" alt="Endigit Logo" width="150" style="background-size:contain;width:150px;margin-top:-14px;"></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="services/labview.html">LabVIEW Development</a></li>
+                                    <li role="presentation"><a href="services/dataacquisition.html">Data Acquisition</a></li>
+                                    <li role="presentation"><a href="services/automatedtest.html">Automated Test</a></li>
+                                    <li role="presentation"><a href="services/embedded.html">Embedded Control and Monitoring</a></li>
+                                    <li role="presentation"><a href="services/vision.html">Vision Systems</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="ipblaster.html">IPBlaster </a></li>
+                                    <li role="presentation"><a href="bacnet.html">BACnet API</a></li>
+                                    <li role="presentation"><a href="squarebattle.html">SquareBattle </a></li>
+                                </ul>
+                            </li>
+							<!-- Removing Technical Data from menu until it is implemented --><!--
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Technical Data<span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="techdata/whitepapers.html">White Papers</a></li>
+                                    <li role="presentation"><a href="techdata/casestudies.html">Case Studies</a></li>
+                                    <li role="presentation"><a href="techdata/about.html">About Endigit</a></li>
+                                </ul>
+                            </li> -->
+                            <li role="presentation"><a href="http://blog.endigit.com/" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;" target="_blank">Blog </a></li>
+							<li role="presentation"><a href="../techdata/about.html" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;">About Endigit</a></li>
+							<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--
+                            <li role="presentation" style="font-size:16px;font-family:Amiko, sans-serif;"><a href="contact.html" style="color:#fcfeff;">Contact </a></li> -->
+                        </ul>
+                        <form class="navbar-form navbar-left" target="_self">
+                            <div class="form-group"></div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero" style="background-size:cover;background-repeat:no-repeat;margin-top:0px;">
+                <div class="row" style="height:150px;"></div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3"></div>
+                    <div class="col-lg-5 col-lg-pull-2 col-md-6 col-md-pull-2 col-sm-7 col-sm-offset-1" style="color:rgba(51,51,51,0.02);">
+                        <h2 style="font-size:46px;margin-top:19px;color:rgb(113,237,242);padding-left:25px;"><strong>PREMIER LABVIEW DEVELOPMENT</strong></h2>
+                        <p style="font-size:30px;font-family:'Source Sans Pro', sans-serif;font-style:normal;font-weight:normal;color:#ffffff;padding-left:25px;">Innovative Data Acquisition &amp; Precision Control </p>
+                    </div>
+                    <div class="col-lg-3 col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /Seems to be hidden for every size -->
+<!-- /Headers -->
+
+    <div style="margin-top:0px;margin-bottom:0px;background-color:#e8e8e8;padding-top:36px;padding-bottom:35px;"><!-- Core capabilities section -->
+        <div class="container" style="background-color:#e8e8e8;">
+            <div class="row" style="margin-left:0px;margin-right:0px;">
+                <div class="col-md-4" style="margin-left:0px;padding-right:20px;padding-left:20px;">
+                    <div style="background-image:url(&quot;assets/img/LabVIEW Development.png&quot;);height:120px;background-repeat:no-repeat;background-size:contain;background-position:center;"></div>
+                    <p></p>
+                    <h4 class="text-uppercase text-center" style="font-weight:bold;color:rgb(75,89,103);font-size:24px;font-family:'Source Sans Pro', sans-serif;"><a href="services/labview.html">LABVIEW DEVELOPMENT</a></h4>
+                    <p class="text-center" style="color:rgb(23,42,116);font-size:16px;">World class LabVIEW development, including LabVIEW RT and LabVIEW FPGA.&nbsp; </p>
+                </div>
+                <div class="col-md-4" style="margin-left:0px;padding-right:20px;padding-left:20px;">
+                    <div style="background-image:url(&quot;assets/img/Automated Test.png&quot;);height:120px;background-repeat:no-repeat;background-size:contain;background-position:center;"></div>
+                    <h4 class="text-center" style="font-weight:bold;color:rgb(75,89,103);font-size:24px;font-family:'Source Sans Pro', sans-serif;"><a href="services/automatedtest.html">AUTOMATED TEST</a></h4>
+                    <p class="text-center" style="color:rgb(23,42,116);font-size:16px;">Reducing cost of test with COTS equipment and efficient programming. </p>
+                </div>
+                <div class="col-md-4" style="margin-left:0px;padding-right:20px;padding-left:20px;">
+                    <div style="background-image:url(&quot;assets/img/Data Acquisition.png&quot;);height:120px;background-repeat:no-repeat;background-size:contain;background-position:center;"></div>
+                    <h4 class="text-center" style="font-weight:bold;color:rgb(75,89,103);font-size:24px;font-family:'Source Sans Pro', sans-serif;"><a href="services/dataacquisition.html">DATA ACQUISITION</a></h4>
+                    <p class="text-center" style="color:rgb(23,42,116);font-size:16px;">Cost effective custom data acquisition systems. </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /Core capabilities section -->
+
+	
+	<!-- Clients Section -->
+	<div style="background-color:#fafcff;height:72px;"> <!-- Header bar -->
+        <div class="container" style="padding-bottom:15px;height:363px;">
+            <div class="row" style="padding-top:15px;padding-bottom:0px;">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase text-center" style="color:rgb(101,96,96);font-family:ABeeZee, sans-serif;font-size:26px;"><strong>HEAR FROM OUR CLIENTS </strong></h3>
+                    <hr style="color:rgb(108,133,181);height:4px;background-color:#a8a4c5;">
+                </div>
+            </div>
+        </div>
+    </div><!-- /Header bar -->
+	<div class="brands" style="background-color:#ffffff;"> <!-- Customer Logos -->
+        <div class="container" style="padding-top:20px">
+			<div class="row" style="margin-left:0px;margin-right:0px;">
+				<div class="col-md-2"><img class="img-responsive" src="assets/img/Clients/US Army.png" style="margin-right:10px;margin-left:10px;"></div>
+				<div class="col-md-3"><img class="img-responsive" src="assets/img/Clients/National Instruments.png" style="margin-right:10px;margin-left:10px;"></div>
+				<div class="col-md-3"><img class="img-responsive" src="assets/img/Clients/OrbitalATK.png" style="margin-right:10px;margin-left:10px;"></div>
+				<div class="col-md-2"><img class="img-responsive" src="assets/img/Clients/US Air Force.png" style="margin-left:10px;margin-right:10px;"></div>
+				<div class="col-md-2"><img class="img-responsive" src="assets/img/Clients/Varex.png" style="margin-left:10px;margin-right:10px;"></div>
+			</div>
+		</div>
+    </div> <!-- /Customer Logos -->
+    <div style="background-color:#02295e;"> <!-- Testimonials -->
+        <div class="container" style="padding-bottom:1px;">
+            <div class="row" style="padding-top:23px;padding-bottom:22px;height:227px;">
+                <div class="col-md-4" style="height:155px;">
+                    <p style="color:#fcfeff;">Endigit has completed multiple, large LabVIEW and LabVIEW RT projects for GMRE. They helped us design the NI hardware up front, allowing us to competitively bid these Air Force test stands. The solutions were timely, elegant and cost-effective. We will happily return to Endigit for all of our future LabVIEW needs. </p>
+                    <p style="color:#fcfeff;font-size:16px;">- Tom Keefer, </p>
+                    <p style="color:#fcfeff;">EVP Engineering, GMRE</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="hidden-xs hidden-sm" style="color:#fcfeff;">Track Group has engaged Endigit in a number of new development projects and in maintenance of pre-existing test equipment services over the last 4 years. Throughout these activities we have found their commitment to creativity and quality results to be exceptional. In every situation we have found the team to exemplify a “get it done, and done on time” attitude and with strong attention to finding the most economical solutions for Track Group. Without reservation I highly recommend Robert and Endigit for their technical skills, professional integrity and quality results.</p>
+					<p class="hidden-xs hidden-sm" style="color:#fcfeff;font-size:16px;">- Bruce Derrick, </p>
+                    <p class="hidden-xs hidden-sm" style="color:#fcfeff;">Director of Engineering, Track Group</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="hidden-xs hidden-sm" style="color:#fcfeff;">Endigit is knowledgeable with great recommendations as to making our process flexible and robust. They were able to communicate with some tricky hardware and wrote a very good program that has been in use for 6 months without a problem. Timely work and very responsive. </p>
+					<p class="hidden-xs hidden-sm" style="color:#fcfeff;font-size:16px;">- Mike, </p>
+                    <p class="hidden-xs hidden-sm" style="color:#fcfeff;">X-Ray Mechanical & Manufacturing Engineer, Moxtek</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /Testimonials -->
+<!-- /Clients Section -->
+
+    <div style="background-color:#6b82a1;padding-top:10px;"> <!-- Call to Action -->
+        <div class="container" style="background-color:#6b82a1;">
+            <div class="row">
+                <div class="col-md-12" style="padding-top:30px;padding-bottom:30px;">
+                    <p class="text-center">
+                        <a class="btn btn-lg" role="button" href="techdata/about.html" style="background-color: #63eaef; border-radius: 24px;font-size:18px;color:rgb(00,38,71);font-family:&#39;Source Sans Pro&#39;, sans-serif;"><strong>How can Endigit help you?</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Call to Action -->
+        <div style="background-color:#c1c1c1;padding-top:16px;padding-bottom:17px;"> <!-- Grey bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><span> </span></div>
+            </div>
+        </div>
+    </div> <!-- /Grey bar -->
+	<div class="footer-clean" style="background-color:rgb(2,41,94);padding-bottom:0px;"> <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(236,236,237);font-size:18px;">Services</h3>
+                        <ul>
+                            <li><a href="services/labview.html" style="color:rgb(177,177,177);">LabVIEW Development</a></li>
+                            <li><a href="services/dataacquisition.html" style="color:rgb(173,175,177);">Data Acquisition</a></li>
+                            <li><a href="services/automatedtest.html" style="color:rgb(173,175,177);">Automated Test</a></li>
+                            <li><a href="services/embedded.html" style="color:rgb(173,175,177);">Embedded Control</a></li>
+                            <li><a href="services/vision.html" style="color:rgb(173,175,177);">Vision Systems</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(230,231,231);font-size:18px;">Products </h3>
+                        <ul>
+                            <li><a href="products/ipblaster.html" style="color:rgb(173,175,177);">IP Blaster</a></li>
+                            <li><a href="products/bacnet.html" style="color:rgb(173,175,177);">BACnet LabVIEW API</a></li>
+                            <li><a href="products/squarebattle.html" style="color:rgb(173,175,177);">SquareBattle </a></li>
+                        </ul>
+                    </div>
+					<!-- Removing Technical Data from menu until it is implemented --><!--
+                    <div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(230,231,232);font-size:18px;">Technical Data</h3>
+                        <ul>
+                            <li><a href="techdata/whitepapers.html" style="color:rgb(173,175,177);">White Papers</a></li>
+                            <li><a href="techdata/casestudies.html" style="color:rgb(173,175,177);">Case Studies</a></li>
+                            <li><a href="techdata/aboutEndigit.html" style="color:rgb(173,175,177);">About Endigit</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(229,230,231);padding-bottom:0px;padding-top:0px;font-size:18px;"> <a href="http://blog.endigit.com/" style="color:rgb(238,239,239);">Blog </a></h3></div>
+                    <div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(226,227,228);font-size:18px;"><a href="techdata/about.html" style="color:rgb(232,234,235);">About Endigit</a></h3></div>
+					<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--
+					<div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(226,227,228);font-size:18px;"><a href="contact.html" style="color:rgb(232,234,235);">Contact </a></h3></div> -->
+                    <div class="item social"><a href="https://www.facebook.com/EndigitEngineers"><i class="icon ion-social-facebook" style="color:rgb(227,228,230);"></i></a><a href="https://www.linkedin.com/company-beta/2470583/"><i class="icon ion-social-linkedin" style="color:rgb(228,229,230);"></i></a>  <!-- <a href="#"><i class="icon ion-social-twitter" style="color:rgb(237,238,239);"></i></a> -->
+                        <p
+                        class="copyright" style="color:rgb(236,237,238);">Endigit © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- /Footer -->
+    <div style="background-color:#02295e;padding-bottom:0px;margin-bottom:20px;"> <!-- Bottom summary -->
+        <div class="container" style="background-color:rgba(23,42,116,0);padding-bottom:0px;">
+            <hr style="font-size:19px;color:rgb(106,129,160);background-color:rgba(219,219,220,0);">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-justify" style="color:rgb(251,249,249);font-size:17px;margin-bottom:20px;"> Endigit makes a contribution to the world by helping our customers increase efficiency and improve products.We do this by providing LabVIEW software development along with data acquisition, automated test, and embedded monitoring and
+                        control systems.</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Bottom summary -->
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/moveheader.js"></script>
+</body>
+
 </html>

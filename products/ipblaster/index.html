@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast configuration tool for IP settings.">
+    <title>Endigit - IPBlaster</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/Brands.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-27410232-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<!-- /Google Analytics -->
+</head>
+
+<body>
+    <div style="height:200px;"> <!-- Header -->
+        <div class="header-blue" style="height:201px;">
+            <nav class="navbar navbar-default navbar-fixed-top navigation-clean-search" style="color:rgba(33,52,119,0);background-color:rgba(23,42,116,0.76);padding-bottom:0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-link" href="../index.html" style="padding-right:0px;"><img class="img-rounded img-responsive" src="../assets/img/Endigit_Logo.png" alt="Endigit Logo" width="150" style="background-size:contain;width:150px;margin-top:-14px;"></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="../services/labview.html">LabVIEW Development</a></li>
+                                    <li role="presentation"><a href="../services/dataacquisition.html">Data Acquisition</a></li>
+									<li role="presentation"><a href="../services/automatedtest.html">Automated Test</a></li>
+                                    <li role="presentation"><a href="../services/embedded.html">Embedded Control and Monitoring</a></li>
+                                    <li role="presentation"><a href="../services/vision.html">Vision Systems</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="ipblaster.html">IPBlaster </a></li>
+                                    <li role="presentation"><a href="bacnet.html">BACnet API</a></li>
+                                    <li role="presentation"><a href="squarebattle.html">SquareBattle </a></li>
+                                </ul>
+                            </li>
+							<!-- Removing Technical Data from menu until it is implemented --><!--
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size:16px;color:rgb(248,245,245);font-family:Amiko, sans-serif;">Technical Data<span class="caret"></span></a>
+                                <ul class="dropdown-menu"
+                                role="menu" style="background-color:rgba(255,255,255,0.8);">
+                                    <li role="presentation"><a href="../techdata/whitepapers.html">White Papers</a></li>
+                                    <li role="presentation"><a href="../techdata/casestudies.html">Case Studies</a></li>
+                                    <li role="presentation"><a href="../techdata/about.html">About Endigit</a></li>
+                                </ul>
+                            </li> -->
+                            <li role="presentation"><a href="http://blog.endigit.com/" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;" target="_blank">Blog </a></li>
+							<li role="presentation"><a href="../techdata/about.html" style="color:#fcfeff;font-size:16px;font-family:Amiko, sans-serif;">About Endigit</a></li>
+							<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--
+                            <li role="presentation" style="font-size:16px;font-family:Amiko, sans-serif;"><a href="contact.html" style="color:#fcfeff;">Contact </a></li> -->
+                        </ul>
+                        <form class="navbar-form navbar-left" target="_self">
+                            <div class="form-group"></div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero"> <!-- Hero title -->
+                <div class="row" style="height:136px;">
+                    <div class="col-lg-3 col-md-3" style="height:167px;">
+                        <h1 style="margin-top:34px;margin-bottom:0px;"> </h1></div>
+                    <div class="col-lg-6 col-md-7 col-md-offset-0">
+                        <h1 style="margin-top:30px;margin-bottom:0px;">Save time with IP Address configurations</h1></div>
+                </div>
+            </div> <!-- /Hero title -->
+        </div>
+    </div> <!-- /Header -->
+    <div style="padding-top:72px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3><strong style="color:rgb(52,37,111);">Easy to Use Utility for IP Address Management</strong></h3>
+                    <p style="font-size:16px;color:rgb(52,37,111);">IP Blaster is a utility for quickly and easily setting a static IP address on a Windows system.</p>
+					<ul>
+						<li>Manually enter new settings and save them for later use.</li>
+						<li>Switch between stored static IP addresses and DHCP with the click of the mouse</li>
+						<li>Quickly view your current IP settings</li>
+						<li>Toggle between settings for different interfaces (i.e. LAN and wireless)</li>
+						<li>Makes CompactRIO and other LabVIEW RT target IP configuration a snap</li>
+						<li>Official support for Windows 7</li>
+						<li>Notification window integration allows for changes without opening a single dialog</li>
+						<li>Unofficial support for previous versions of Windows</li>
+						<li>IP Blaster</li>
+
+						<li>Version 1.2.0.42</li>
+
+						<li>Released August 29, 2012</li>
+
+						<li>Added context help</li>
+						<li>Added custom icon</li>
+						<li>Added help file and system tray link to it</li>
+					</ul>
+                </div>
+                <div class="col-md-6"><img class="img-responsive" style="height:540px" src="../assets/img/IP Blaster 1000 x 1423.png"></div>
+            </div>
+        </div>
+    </div>
+	<div class="col-md-4">
+		<img class="img-responsive" src="../assets/img/IP Blaster.png">
+	</div>
+	<div class="col-md-2">
+		<img class="img-responsive" src="../assets/img/LVcompatible.silver.vert.png">
+	</div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3><strong style="color:rgb(52,37,111);">IP Blaster Walkthrough:</strong></h3>
+                    <p style="font-size:16px;color:rgb(52,37,111);"> IP Blaster is a utility for quickly and easily setting a static IP address on your Windows system.</p>
+					<p style="font-size:16px;color:rgb(52,37,111);">Select the interface you want to modify in the drop down box at the top.  Your current settings will shows up in "Current Settings". Modify "New Settings" to your desired settings and press "Set".</p>
+					<p style="font-size:16px;color:rgb(52,37,111);">"New Settings" can be saved by typing a profile name in "Profile" and clicking "Save".  You can load a saved profile into "New Settings" by selecting the desired profile in "Profile" and clicking "Load".  Saved profiles can be automatically set by right-clicking the system tray icon and selecting the profile name.</p>
+					<p style="font-size:16px;color:rgb(52,37,111);"> IP Blaster is officially supported on Windows 7 and unofficially supported on other versions of Windows.</p>
+					<p style="font-size:16px;color:rgb(52,37,111);"> To activate IP Blaster, click on the appropriate button on the startup dialog in the 30 day free trial.</p>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+
+	   <div style="padding-bottom:93px;"><!-- Call to Action -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn btn-link" type="button" href="../techdata/about.html">Let us know how we can help you &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Call to Action -->
+	
+    <div style="background-color:#c1c1c1;padding-top:16px;padding-bottom:17px;"> <!-- Grey bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><span> </span></div>
+            </div>
+        </div>
+    </div> <!-- /Grey bar -->
+     <div class="footer-clean" style="background-color:rgb(2,41,94);padding-bottom:0px;"> <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(236,236,237);font-size:18px;">Services</h3>
+                        <ul>
+                            <li><a href="../services/labview.html" style="color:rgb(177,177,177);">LabVIEW Development</a></li>
+                            <li><a href="../services/dataacquisition.html" style="color:rgb(173,175,177);">Data Acquisition</a></li>
+							<li><a href="../services/automatedtest.html" style="color:rgb(173,175,177);">Automated Test</a></li>
+                            <li><a href="../services/embedded.html" style="color:rgb(173,175,177);">Embedded Control</a></li>
+                            <li><a href="../services/vision.html" style="color:rgb(173,175,177);">Vision Systems</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(230,231,231);font-size:18px;">Products </h3>
+                        <ul>
+                            <li><a href="ipblaster.html" style="color:rgb(173,175,177);">IP Blaster</a></li>
+                            <li><a href="bacnet.html" style="color:rgb(173,175,177);">BACnet LabVIEW API</a></li>
+                            <li><a href="squarebattle.html" style="color:rgb(173,175,177);">SquareBattle </a></li>
+                        </ul>
+                    </div>
+                    <!-- Removing Technical Data from menu until it is implemented --><!--
+					<div class="col-md-2 col-sm-3 item">
+                        <h3 style="color:rgb(230,231,232);font-size:18px;">Technical Data</h3>
+                        <ul>
+                            <li><a href="../techdata/whitepapers.html" style="color:rgb(173,175,177);">White Papers</a></li>
+                            <li><a href="../techdata/casestudies.html" style="color:rgb(173,175,177);">Case Studies</a></li>
+							<li><a href="../techdata/about.html" style="color:rgb(173,175,177);">About Endigit</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(229,230,231);padding-bottom:0px;padding-top:0px;font-size:18px;"> <a href="http://blog.endigit.com/" style="color:rgb(238,239,239);">Blog </a></h3></div>
+					<div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(226,227,228);font-size:18px;"><a href="../techdata/about.html" style="color:rgb(232,234,235);">About Endigit</a></h3></div>
+					<!-- replacing the contact page with about endigit until the contact page is implemented --> <!--	
+                    <div class="col-md-2 col-sm-3 item" style="padding-top:15px;">
+                        <h3 class="text-center" style="color:rgb(226,227,228);font-size:18px;"><a href="contact.html" style="color:rgb(232,234,235);">Contact </a></h3></div> -->
+                    <div class="item social"><a href="https://www.facebook.com/EndigitEngineers"><i class="icon ion-social-facebook" style="color:rgb(227,228,230);"></i></a><a href="https://www.linkedin.com/company-beta/2470583/"><i class="icon ion-social-linkedin" style="color:rgb(228,229,230);"></i></a>  <!-- <a href="#"><i class="icon ion-social-twitter" style="color:rgb(237,238,239);"></i></a> -->
+                        <p
+                        class="copyright" style="color:rgb(236,237,238);">Endigit © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- /Footer -->
+    <div style="background-color:#02295e;padding-bottom:0px;margin-bottom:20px;"> <!-- Bottom summary -->
+        <div class="container" style="background-color:rgba(23,42,116,0);padding-bottom:0px;">
+            <hr style="font-size:19px;color:rgb(106,129,160);background-color:rgba(219,219,220,0);">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-justify" style="color:rgb(251,249,249);font-size:17px;margin-bottom:20px;"> Endigit makes a contribution to the world by helping our customers increase efficiency and improve products.We do this by providing LabVIEW software development along with data acquisition, automated test, and embedded monitoring and
+                        control systems.</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Bottom summary -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/moveheader.js"></script>
+</body>
+
+</html>

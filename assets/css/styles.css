@@ -18,8 +18,8 @@ body .team-grid .text-center {  text-align: left;}
 .resp-tabs-list li .image{ position:relative; }
 .resp-tabs-list li img{ max-width:100%;}
 .resp-tabs-list li .image .hvr{ opacity:0;  position:absolute; left:0; top:0}
-.resp-tabs-list li:hover .image .hvr,.resp-tabs-list li.resp-tab-active .image .hvr{ opacity:1}
-.resp-tabs-list li:hover .image:before, .resp-tabs-list li.resp-tab-active .image:before{ border:5px solid #63EAEF; height:calc(100% + 14px); width:calc(100% + 14px); position:absolute; top:-7px; left:-7px; content:""}
+.resp-tabs-list li:hover .image .hvr{ opacity:1}
+.resp-tabs-list li:hover .image:before{ border:5px solid #63EAEF; height:calc(100% + 14px); width:calc(100% + 14px); position:absolute; top:-7px; left:-7px; content:""}
 .resp-tabs-list li p{ font-size:16px; line-height:1.2; margin-top:10px; color:#003971 }
 .resp-tabs-list li p b{ display:block; font-size:20px}
 .resp-tabs-list li a{ font-weight:bold; color:#003971 }
@@ -50,8 +50,8 @@ h2.resp-accordion {cursor: pointer; padding: 5px;  display: none; }
 .resp-accordion img{ max-width:100%;}
 .resp-accordion .image{position:relative}
 .resp-accordion .image .hvr{ opacity:0;  position:absolute; left:0; top:0}
-.resp-accordion:hover .image .hvr,.resp-accordion.resp-tab-active .image .hvr{ opacity:1}
-.resp-accordion:hover .image:before, .resp-accordion.resp-tab-active .image:before{ border:5px solid #63EAEF; height:calc(100% + 14px); width:calc(100% + 14px); position:absolute; top:-7px; left:-7px; content:""}
+.resp-accordion:hover .image .hvr{ opacity:1}
+.resp-accordion:hover .image:before{ border:5px solid #63EAEF; height:calc(100% + 14px); width:calc(100% + 14px); position:absolute; top:-7px; left:-7px; content:""}
 .resp-accordion:hover a, .resp-accordion.resp-tab-active a{ color:#88EFF3 !important}
 .resp-accordion:hover .caret{   border-top-color:#88EFF3 !important;}
 .resp-accordion.resp-tab-active .caret{ border-bottom:4px dashed;  border-top:0; border-bottom-color:#88EFF3 !important;}
@@ -101,6 +101,7 @@ h2.resp-tab-title:last-child { border-bottom: 12px solid #c1c1c1 !important; bac
 form label{ color:#02295E; font-weight:bold}
 .form-control{ background:#F8F8F8; border-radius:0; border:1px solid #EAEAEA; box-shadow:none}
 form input {  background: #88EFF3;  border-image: none;  border-radius: 20px;  box-shadow: none;  padding: 10px 40px;  border: none; color:#003971; font-weight:bold}
+input[type="checkbox"] {  cursor: pointer;}
 
 .contact_person{ margin-bottom:30px}
 .contact_person p{ color:#02295E !important;}
@@ -127,7 +128,7 @@ h2.resp-accordion { display: block; margin-bottom: 0 !important;}
 
 .col_space .col-md-9:before{ height:1px; width:calc(100% - 30px); top:auto; bottom:0; left:0; right:0; margin: auto}
 .contact{ padding:20px 0}
-.form_bottom{ text-align:left; margin-bottom:20px}
+.form_bottom{ text-align:center; margin-bottom:20px; padding-bottom:20px}
 
 .header-blue .navbar.navbar-default .navbar-nav > li > a{ padding-bottom:8px; color:#FFFFFF !important; background:#02295E !important; border-bottom: none;}
 .header-blue .navbar.navbar-default .navbar-nav > li > a:focus, .header-blue .navbar.navbar-default .navbar-nav > li > a:hover {  border-bottom: none;  color: #FFFFFF !important;}
@@ -148,7 +149,8 @@ h2.resp-accordion { display: block; margin-bottom: 0 !important;}
 .resp-tabs-list li p b{ font-size:16px}
 .col_space:before{ display:none}
 .contact{ padding:20px 0}
-.form_bottom{ text-align:left; margin-bottom:20px}
+.form_bottom{ text-align:right; margin-bottom:20px; padding-bottom:20px}
+.col_space .col-md-9:before{ height:1px; width:calc(100% - 30px); top:auto; bottom:0; left:0; right:0; margin: auto}
 
 }
 

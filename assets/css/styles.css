@@ -14,7 +14,7 @@ body .team-grid .text-center {  text-align: left;}
 
 .resp-tabs-list {  list-style-image: none;  list-style-type: none;  padding: 0; margin-left:-10px; margin-right:-10px}
 
-.resp-tabs-list li { float:left;  width:20%; padding: 10px; }
+.resp-tabs-list li { float:left;  width:12%; padding: 10px; }
 .resp-tabs-list li .image{ position:relative; }
 .resp-tabs-list li img{ max-width:100%;}
 .resp-tabs-list li .image .hvr{ opacity:0;  position:absolute; left:0; top:0}
